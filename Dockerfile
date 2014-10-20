@@ -6,4 +6,4 @@ RUN apt-get install -y dnsmasq
 
 COPY dnsmasq.conf /etc/
 
-CMD ["dnsmasq", "-d"]
+CMD exec dnsmasq -d
